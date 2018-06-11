@@ -9,7 +9,6 @@ import {PaginaNaoEncontradaComponent} from './pagina-nao-encontrada/pagina-nao-e
 import {PublicoModule} from './publico/publico.module';
 import {AdminModule} from './admin/admin.module';
 
-
 @NgModule({
   imports: [
     BrowserModule,
@@ -22,8 +21,7 @@ import {AdminModule} from './admin/admin.module';
   ],
   declarations: [
     AppComponent,
-    PaginaNaoEncontradaComponent,
-   
+    PaginaNaoEncontradaComponent
   ],
   providers: [
 
