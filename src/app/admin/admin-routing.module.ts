@@ -1,14 +1,16 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
-import {HomeComponent} from './home/home.component';
 import {AdminComponent} from './admin/admin.component';
 import {PaginaNaoEncontradaComponent} from './pagina-nao-encontrada/pagina-nao-encontrada.component';
+import { InicioComponent } from './inicio/inicio.component';
+import { CadastroComponent } from './cadastro/cadastro.component';
 
 
 const routes: Routes = [
   {
     path: 'admin', component: AdminComponent, children: [
-      {path: '', component: HomeComponent},
+      {path: 'cadastro', component: CadastroComponent},
+      {path: 'inicio', component: InicioComponent},
       {path: '**', component: PaginaNaoEncontradaComponent}
       
       ,
