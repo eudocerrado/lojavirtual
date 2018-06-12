@@ -8,15 +8,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import {SharedModule} from '../shared/shared.module';
-import {CadastroDeDisciplinaComponent} from './cadastro-de-disciplina/cadastro-de-disciplina.component';
-import {CadastroDeTurmaComponent} from './cadastro-de-turma/cadastro-de-turma.component';
-import {DisciplinaComponent} from './disciplina/disciplina.component';
-import {ListaDeDisciplinasComponent} from './lista-de-disciplinas/lista-de-disciplinas.component';
-import {ListaDeTurmasComponent} from './lista-de-turmas/lista-de-turmas.component';
-import {TurmaComponent} from './turma/turma.component';
-import {DisciplinasService} from './disciplinas.service';
-import {TurmasService} from './turmas.service';
 import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao-encontrada.component';
+
 
 @NgModule({
   imports: [
@@ -30,17 +23,11 @@ import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao
   declarations: [
     HomeComponent,
     AdminComponent,
-    CadastroDeDisciplinaComponent,
-    CadastroDeTurmaComponent,
-    DisciplinaComponent,
-    ListaDeDisciplinasComponent,
-    ListaDeTurmasComponent,
-    TurmaComponent,
-    PaginaNaoEncontradaComponent
-  ],
+    PaginaNaoEncontradaComponent,
+    
+    ],
   providers: [
-    DisciplinasService,
-    TurmasService
+    //aqui fica o service
   ]
 })
 export class AdminModule {
